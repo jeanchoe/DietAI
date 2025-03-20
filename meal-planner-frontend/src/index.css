@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+  background-color: #101b15;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  overflow-y: hidden;
+
+}
+
+/* Center the title at the top with spacing */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  justify-content: flex-end; /* Push content to the bottom */
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Make the container take full height */
+  padding: 20px;
+}
+
+.result-box {
+  max-width: 80%;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: auto; /* Pushes the results up, keeping the input at the bottom */
+  overflow-y: auto;
+  max-height: 60vh; /* Prevents results from taking over the entire screen */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Adds space between input fields and buttons */
+  padding: 20px;
+  position: fixed;
+  bottom: 20px; /* Keeps it at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+.inputs {
+  display: flex;
+  gap: 15px; /* Adds space between the input fields and the button */
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008b6a;
+}
+
+/* Position instructions right above inputs */
+.instructions {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  position: absolute;
+  bottom: 10%; /* Moves it above the input section */
+  left: 50%;
+  transform: translateX(-50%);
+}
